@@ -3,6 +3,8 @@ import numpy as np
 from lstm_architecture import one_hot, run_with_config
 
 
+
+
 # --------------------------------------------
 # Neural net's config.
 # --------------------------------------------
