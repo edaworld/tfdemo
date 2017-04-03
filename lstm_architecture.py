@@ -1,4 +1,4 @@
-__author__ = 'gchevalier'
+__author__ = 'eejason'
 
 import tensorflow as tf
 from sklearn import metrics
