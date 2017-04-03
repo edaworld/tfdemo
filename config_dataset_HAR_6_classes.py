@@ -1,8 +1,6 @@
-from lstm_architecture import one_hot, run_with_config
-
 import numpy as np
 
-import os
+from lstm_architecture import one_hot, run_with_config
 
 
 # --------------------------------------------
