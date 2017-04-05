@@ -1,9 +1,11 @@
-__author__ = 'eejason'
+__author__ = 'eejasonliu'
 
 import tensorflow as tf
 from sklearn import metrics
 from sklearn.utils import shuffle
 import numpy as np
+
+from tensorflow.contrib.layers.python.layers import batch_norm as batch_norm
 
 
 def one_hot(y):
@@ -140,10 +142,6 @@ def bi_LSTM_cell(input_hidden_tensor, n_inputs, n_outputs, config):
             for f, b in zip(forward, backward)]
 
     return layer_hidden_outputs
-
-
-# 无用代码
-
 
 
 # example hidden = residual_bidirectional_LSTM_layers(hidden, config.n_inputs, config.n_hidden, 1, config, keep_prob_for_dropout)

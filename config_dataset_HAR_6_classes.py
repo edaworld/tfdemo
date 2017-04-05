@@ -3,8 +3,6 @@ import numpy as np
 from lstm_architecture import one_hot, run_with_config
 
 
-
-
 # --------------------------------------------
 # Neural net's config.
 # --------------------------------------------
@@ -203,7 +201,7 @@ for learning_rate in [0.001]:  # [0.01, 0.007, 0.001, 0.0007, 0.0001]:
             # except:
             #     accuracy_out, best_accuracy = -1, -1
             accuracy_out, best_accuracy, f1_score_out, best_f1_score = (
-            run_with_config(EditedConfig, X_train, y_train, X_test, y_test))
+                run_with_config(EditedConfig, X_train, y_train, X_test, y_test))
             print(accuracy_out, best_accuracy, f1_score_out, best_f1_score)
 
             with open('{}_result_HAR_6.txt'.format(trial_name), 'a') as f:
